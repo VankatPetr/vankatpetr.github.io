@@ -1,7 +1,7 @@
 ---
 title: "Compare 2 Excel Files and Create an Excel Diff using Python"
 date: 2019-07-28
-tags: [Python, Pandas]
+tags: [Python, Pandas, Excel]
 header:
 excerpt: "A simple code for creating a diff of 2 excel files."
 ---

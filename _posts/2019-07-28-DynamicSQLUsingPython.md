@@ -1,6 +1,6 @@
 ---
 title: "Dynamic SQL Using Python"
-date: 2019-07-28
+date: 2019-07-27
 tags: [Python, MS SQL]
 header:
 excerpt: "Python, MS SQL"

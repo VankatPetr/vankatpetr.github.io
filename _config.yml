@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Petr Vankat"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/BioPhoto.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "blog"
   location         : "Prague, CZ"
   email            :

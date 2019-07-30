@@ -13,7 +13,7 @@ Notes:
 * The following parameters need to be set up (at the beginning of the code):
   - Path to the 'old' Excel file (containing the original rows)
   - Path to the 'new' Excel file (containing the changed rows)
-  - List of key columns - this can be on or more columns (list), the column(s) has to be a primary key
+  - List of key columns - this can be one or more columns (list), the column(s) has to be a primary key
   - Sheet name (the sheet containing the data) - the code assumes the same sheet name in both files (but it can be easily changed)
 
 Here is the full code (example):

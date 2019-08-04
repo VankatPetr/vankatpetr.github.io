@@ -5,4 +5,4 @@ header:
   #image: "/images/front.jpg"
 ---
 
-I'm risk and data professional and have worked with global banks in London and Prague.
+I’m Petr Vankat, just another data guy from Prague.

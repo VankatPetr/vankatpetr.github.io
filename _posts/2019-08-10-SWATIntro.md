@@ -617,3 +617,6 @@ castbl.groupby('REASON').VALUE.mean()
 ### Model Building
 + You can use SWAT to build models like decision trees, regression etc.
 + Python packages like SciKit-Learn are also available.
+
+
+Jupyter Notebook [link](https://github.com/VankatPetr/SAS/blob/master/SWAT/SWATIntro.ipynb)

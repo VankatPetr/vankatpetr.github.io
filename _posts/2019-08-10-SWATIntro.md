@@ -599,7 +599,7 @@ plt.show()
 ```
 
 
-
+image: "/images/SWATVisualisation.png"
 
 
 ### Data Manipulation

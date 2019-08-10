@@ -306,12 +306,7 @@ df = MQHACK.to_frame()
 display(type(MQHACK))
 display(type(df))
 ```
-
-
     swat.cas.table.CASTable
-
-
-
     swat.dataframe.SASDataFrame
 
 
@@ -363,9 +358,6 @@ castbl.describe(include=['numeric', 'character'])
     data size: 785334
     vardata size: 70134
     memory usage: 785456
-
-
-
     None
 
 
@@ -599,7 +591,7 @@ plt.show()
 ```
 
 
-image: "/images/SWATVisualisation.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/SWATVisualisation.png" alt="Data Visualisation">
 
 
 ### Data Manipulation

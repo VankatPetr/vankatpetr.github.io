@@ -175,7 +175,7 @@ conn.session.sessionStatus()
 
 # Data
 
-+ Data can be already in to CAS. Use fileinfo method to explore the public library and see what datasets are already avilable for you.
++ Data can be already in CAS. Use fileinfo method to explore the public library and see what datasets are already available for you.
 + To work on a table a CASTable statement needs to be run. This will create a data table object.
 
 
@@ -276,7 +276,7 @@ MQHACK = conn.CASTable(name='MQHACK_NEW', caslib='public')
 ```
 
 + If data is not available, you can load new data by yourself. For example load the hmeq.csv data set onto the server (use a folder path where you store the data) and create a data table object called castbl.
-+ Successfull upload will be confirmed by 2 NOTE's. The CASUSER library is a library which will make the data set available to the current user only.
++ Successful upload will be confirmed by 2 NOTE's. The CASUSER library is a library which will make the data set available to the current user only.
 
 
 ```python
@@ -287,7 +287,7 @@ castbl = conn.read_csv(os.environ.get("HOME")+"/Courses/EVMLOPRC/DATA/hmeq.csv",
     NOTE: The table HMEQ has been created in caslib CASUSER(vankat.petr@outlook.com) from binary data uploaded to Cloud Analytic Services.
 
 
-+ It is possible to move data between libraries. For example, once you are done with data analysis/manipulation etc., you can promote the final set to to the public library (target = the name of the new CAS table within the target library).
++ It is possible to move data between libraries. For example, once you are done with data analysis/manipulation etc., you can promote the final set to the public library (target = the name of the new CAS table within the target library).
 
 
 ```python
@@ -581,7 +581,7 @@ castbl.describe(include=['numeric', 'character'])
 
 
 ### Data Visualisation
-+ Standard Python packages can be used to visualize data.
++ Standard Python packages for data visualisation are available.
 + For example matplotlib functionality combined with SWAT methods can be used.
 
 
@@ -595,7 +595,7 @@ plt.show()
 
 
 ### Data Manipulation
-+ Python libraries like Pandas can be used.
++ For example Pandas (probably is the most popular library for data analysis in Python) can be used
 
 
 ```python
@@ -615,8 +615,8 @@ castbl.groupby('REASON').VALUE.mean()
 
 
 ### Model Building
-+ You can use SWAT to build models like decision trees, regression etc.
-+ Python packages like SciKit-Learn are also available.
++ You can use SWAT to build models like regression etc.
++ Machine learning libraries like SciKit-Learn can be used as well.
 
 
 Jupyter Notebook [link](https://github.com/VankatPetr/SAS/blob/master/SWAT/SWATIntro.ipynb)

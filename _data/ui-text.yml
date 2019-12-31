@@ -61,17 +61,10 @@ en-AU:
 # Spanish
 # -------
 es: &DEFAULT_ES
-<<<<<<< HEAD
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
-=======
   skip_links                 : "Saltar enlaces"
   skip_primary_nav           : "Saltar a navegación principal"
   skip_content               : "Saltar a contenido"
   skip_footer                : "Saltar a pie"
->>>>>>> 92401a14b75a7337ac7077a8b316b31bd15913c0
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
@@ -1604,7 +1597,7 @@ hi-IN:
 <<<<<<< HEAD
 
 =======
-  
+
 # Catalan
 # --------------
 ca: &DEFAULT_CA
@@ -1656,7 +1649,7 @@ ca: &DEFAULT_CA
   back_to_top                : "Torna a dalt"
 ca-ES:
   <<: *DEFAULT_CA
-  
+
 >>>>>>> 92401a14b75a7337ac7077a8b316b31bd15913c0
 # Another locale
 # --------------

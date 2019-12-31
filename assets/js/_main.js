@@ -3,21 +3,6 @@
    ========================================================================== */
 
 $(document).ready(function() {
-<<<<<<< HEAD
-  // Sticky footer
-  var bumpIt = function() {
-    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-  };
-
-  bumpIt();
-  $(window).resize(
-    jQuery.throttle(250, function() {
-      bumpIt();
-    })
-  );
-
-=======
->>>>>>> 92401a14b75a7337ac7077a8b316b31bd15913c0
   // FitVids init
   $("#main").fitVids();
 
@@ -95,11 +80,7 @@ $(document).ready(function() {
       events: true // if true, emit custom events
     });
   }
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 92401a14b75a7337ac7077a8b316b31bd15913c0
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
@@ -139,8 +120,6 @@ $(document).ready(function() {
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
-<<<<<<< HEAD
-=======
 
   // Add anchors for headings
   $('.page__content').find('h1, h2, h3, h4, h5, h6').each(function() {
@@ -154,5 +133,4 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
->>>>>>> 92401a14b75a7337ac7077a8b316b31bd15913c0
 });

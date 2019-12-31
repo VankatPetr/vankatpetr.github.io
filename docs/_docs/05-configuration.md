@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-07-24T10:15:47-04:00
+last_modified_at: 2019-10-04T10:54:48-04:00
 toc: true
 ---
 
@@ -285,6 +285,12 @@ defaults:
 
 To disable reading time for a post, add `read_time: false` its YAML Front Matter to override what was set in `_config.yml`.
 
+`words_per_minute` can also be adjusted per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.
+
+```yaml
+words_per_minute: 250
+```
+
 ### Comments
 
 [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
@@ -368,7 +374,7 @@ repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 **Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [issues feature](https://guides.github.com/features/issues/) also needs to be active on your repo.
 {: .notice--warning}
 
-To enable utterances on the front end set `comments.provider` and the color theme of the widget. 
+To enable utterances on the front end set `comments.provider` and the color theme of the widget.
 
 ```yaml
 comments:
@@ -594,13 +600,13 @@ Add a Google search box to your site.
 1. Create a **New search engine** in [Google Custom Search Engine](https://cse.google.com/cse/all), give it an appropriate name and setup "Sites to search" to your liking.
 
 2. Under **Look and feel** choose the "Results only" layout and a theme (*Minimalist* is a good choice to match the default look of the Minimal Mistakes).
-   
+
    ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' | relative_url }})
 
 3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
 
 4. Add your search engine ID to `_config.yml` like so:
-   
+
    ```yaml
    google:
      search_engine_id: YOUR_SEARCH_ENGINE_ID
@@ -788,7 +794,7 @@ author:
   name     : "Your Name"
   avatar   : "/assets/images/bio-photo.jpg"
   bio      : "My awesome biography constrained to a sentence or two goes here."
-  location : "Somewhere, USA" 
+  location : "Somewhere, USA"
 ```
 
 Author links are all optional, include the ones you want visible under the `author.links` array.
@@ -950,14 +956,12 @@ When hosting with GitHub Pages a small [set of gems](https://pages.github.com/ve
 | [jekyll-sitemap][jekyll-sitemap] | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
 | [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
 | [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
-| [jemoji][jemoji] | GitHub-flavored emoji plugin for Jekyll. |
 | [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes. |
 
 [jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-gist]: https://github.com/jekyll/jekyll-gist
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[jemoji]: https://github.com/jekyll/jemoji
 [jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
 
 If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.

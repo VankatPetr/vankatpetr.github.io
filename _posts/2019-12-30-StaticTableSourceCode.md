@@ -5,6 +5,7 @@ tags: [SAS, Linux shell, PROC SQL]
 header:
 excerpt: "An example how to create a source code for a SAS static metadata table."
 ---
+<div style="text-align: justify">
 Do you have a static metadata table (sas7bdat file) and you need to generate a source code for this table including all values? You may ask why this would be needed? Many reasons, for example you would like to track the metadata table and its changes in Git. If you check in the whole sas7bdat file, you will not be able to fully utilize Git. To see and track metadata changes, you need both DDL (creating table) and DML (inserting data into table) of the metadata table. The below SAS code generates PROC SQL code which can replicate an existing metadata table and insert all existing metadata. Such a code can be easily tracked in Git. If you need to change your metadata, you can just adjust the insert statements and then execute your code in you PROD environment. It is assumed SAS on Unix/Linux environment.
 
 The code is not complicated. First you need to prepare a macro **%get_ddl** which can generate the PROC SQL create statement. As I’m lazy, I borrowed this simple macro from [Allan Bowe](https://stackoverflow.com/users/66696/allan-bowe).
@@ -12,6 +13,7 @@ The code is not complicated. First you need to prepare a macro **%get_ddl** whic
 Then you prepare **%DS2SourceCode** macro which generates the whole source code. It creates 2 temporary files metatable_create.sas and metatable_data.sas. A few Linux shell commands then create the whole SAS code.
 
 Before the final version of the SAS code is produced, it is tested if the code can exactly replicate the existing metadata table. This is done by the last macro **%meta**.
+</div>
 
 ```sas
 /*---------------------------------------------------------------------------*/

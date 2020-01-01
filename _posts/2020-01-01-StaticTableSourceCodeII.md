@@ -196,6 +196,7 @@ Then, you can utilize SAS JSON engine to read the json file and work with the da
 *%meta_json_read(/home/petrvankat0/Metadata,class);
 ```
 Output of the **%meta_json_read** macro:
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/StaticTableSourceCodeJsonMeta_Print.PNG" alt="Data Visualisation">
 
 

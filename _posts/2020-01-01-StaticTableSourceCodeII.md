@@ -24,7 +24,7 @@ First, you convert your metadata table to a json file. The following macro **%me
 ```
 It will create a json file like this:
 
-```JSON
+```json
 {
   "SASJSONExport": "1.0 PRETTY",
   "SASTableData+CLASS": [
@@ -195,6 +195,8 @@ Then, you can utilize SAS JSON engine to read the json file and work with the da
 /*example of the meta_json_read macro */
 *%meta_json_read(/home/petrvankat0/Metadata,class);
 ```
+Output of the **%meta_json_read** macro:
+<img src="{{ site.url }}{{ site.baseurl }}/images/StaticTableSourceCodeJsonMeta_Print.PNG" alt="Data Visualisation">
 
 
 SAS code [link](https://github.com/VankatPetr/SAS/blob/master/StaticTableSourceCodeII/StaticTableSourceCodeJsonMeta.sas)

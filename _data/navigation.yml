@@ -2,8 +2,8 @@
 main:
   - title: "About"
     url: /about/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Czech Banking Statistics (beta)"
+    url: https://mybinder.org/v2/gh/VankatPetr/CzechBankingStatistics/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FCzechBankingStatistics.ipynb
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

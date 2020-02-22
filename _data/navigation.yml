@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
   - title: "Czech Banking Statistics (beta)"
     url: https://mybinder.org/v2/gh/VankatPetr/CzechBankingStatistics/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FCzechBankingStatistics.ipynb
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Capital Adequacy of Czech Banks (beta)"
+    url: https://mybinder.org/v2/gh/VankatPetr/CzechBanksCapital/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2Fcapital.ipynb
+  - title: "About"
+    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

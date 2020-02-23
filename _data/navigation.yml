@@ -2,7 +2,7 @@
 main:
   - title: "Czech Banking Statistics (beta)"
     url: https://mybinder.org/v2/gh/VankatPetr/CzechBankingStatistics/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FCzechBankingStatistics.ipynb
-  - title: "Capital Adequacy of Czech Banks (beta)"
+  - title: "Capital Adequacy of Czech Banks"
     url: https://mybinder.org/v2/gh/VankatPetr/CzechBanksCapital/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2Fcapital.ipynb
   - title: "About"
     url: /about/
